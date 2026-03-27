@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ProductImageUpload.Controllers
+namespace ProductImageUpload.Controllers    
 {
     public class ProductController : Controller
     {
@@ -63,7 +63,7 @@ namespace ProductImageUpload.Controllers
                 Price = ProductPrice
             };
 
-            return Ok(new { Message = "Product added successfully in databse", Product = newProduct });
+            return Ok(new { Message = "Product added successfully", Product = newProduct });
         }
     }
 }
