@@ -59,11 +59,11 @@ namespace ProductImageUpload.Controllers
             {
                 Id = Guid.NewGuid(), 
                 Name = ProductName,
-                Description = ProductDescription,
+                Description = ProductDescription,   
                 Price = ProductPrice
             };
 
-            return Ok(new { Message = "Product added successfully", Product = newProduct });
+            return Ok(new { Message = "Product added successfully in databse", Product = newProduct });
         }
     }
 }
