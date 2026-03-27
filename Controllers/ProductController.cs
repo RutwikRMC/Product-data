@@ -63,7 +63,7 @@ namespace ProductImageUpload.Controllers
                 Price = ProductPrice
             };
 
-            return Ok(new { Message = "Product added successfully", Product = newProduct });
+            return Ok(new { Message = "Ok status product added successfully", Product = newProduct });
         }
     }
 }
