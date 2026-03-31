@@ -22,6 +22,7 @@ namespace ProductImageUpload.Controllers
             if (ProductImage == null || ProductImage.Length == 0)
             {
                 ModelState.AddModelError(nameof(ProductImage), "Please   provide a non-empty image file.");
+                // new comment in new      + brach feature 2
                 return BadRequest(ModelState);
             }
 
